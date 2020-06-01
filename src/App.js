@@ -23,7 +23,7 @@ class App extends Component {
     let fileType = fileParts[1];
     console.log("Preparing the upload", fileName, fileType);
     
-    fetch("http://localhost:3001/sign_s3",{
+    fetch("http://ec2-18-218-16-34.us-east-2.compute.amazonaws.com/sign_s3",{
       method: "post",
       headers: {
         'Accept': 'application/json',
